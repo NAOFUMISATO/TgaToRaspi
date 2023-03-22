@@ -89,8 +89,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp) {
 		DragQueryFile(hdrop, 0, filename, sizeof(filename) / sizeof(TCHAR));
 		wsprintf(szStr, "path = %s", filename);
 		InvalidateRect(hWnd, NULL, FALSE);
-		
-		
+				
 		ti->Load(filename);
 
 		break;
